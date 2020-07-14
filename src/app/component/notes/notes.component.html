@@ -1,0 +1,23 @@
+<kendo-editor #editor style="height: 700px;" (valueChange)= "valueChange($event)"  [value]="value">
+    <kendo-toolbar style="background-color: black;">
+        <kendo-toolbar-button
+        [text]="'Lock'"
+        [showText]="'both'"
+        [icon]="'lock'"
+        [showIcon]="'both'"
+        [primary]="true"
+        [disabled]="false"
+        (click)="onLockClick($event)">
+    </kendo-toolbar-button>
+    <kendo-toolbar-button
+        [text]="'Save'"
+        [showText]="'both'"
+        [icon]="'save'"
+        [showIcon]="'both'"
+        [primary]="true"
+        [disabled]="false"
+        (click)="onSaveClick($event)">
+</kendo-toolbar-button>
+    </kendo-toolbar>
+</kendo-editor>
+
